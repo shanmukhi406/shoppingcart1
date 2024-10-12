@@ -192,7 +192,7 @@ body {
 }
 
 .cart-item .item-actions button {
-	background-color: #6c4ac2;
+	background-color: #664ac2;
 	border: none;
 	color: white;
 	padding: 8px 15px;
@@ -223,7 +223,7 @@ body {
 }
 
 .cart .checkout-button {
-	background-color: #4c4ac2;
+	background-color: #664ac2;
 	border: none;
 	color: white;
 	padding: 10px 15px;
@@ -318,4 +318,170 @@ body {
 
 .checkout-section .checkout-button:hover {
 	background-color: #4c5cb6;
+}
+
+
+/* Login Container Styles */
+.login-container {
+    border: 1px solid #ccc; /* Light border around the container */
+    border-radius: 8px; /* Rounded corners */
+    padding: 20px; /* Padding inside the container */
+    max-width: 400px; /* Max width for the form */
+    margin: 40px auto; /* Center the form on the page */
+    background-color: #f9f9f9; /* Light background color */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.login-container h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark color for text */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.form-group label {
+    display: block; /* Display label as a block */
+    margin-bottom: 5px; /* Space below the label */
+    font-weight: bold; /* Bold font for labels */
+    color: #555; /* Darker color for labels */
+}
+
+.form-group input {
+    width: 100%; /* Full width for input fields */
+    padding: 10px; /* Padding for input fields */
+    border: 1px solid #ccc; /* Light border for input fields */
+    border-radius: 4px; /* Rounded corners */
+    font-size: 16px; /* Font size for input fields */
+    transition: border-color 0.3s ease; /* Smooth transition for border color */
+}
+
+.form-group input:focus {
+    outline: none; /* Remove default outline */
+    border-color: #9e4caf; /* Change border color on focus */
+}
+
+.create-account-button {
+    padding: 10px 15px; /* Button padding */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size for button */
+    background-color: #844caf; /* Green background */
+    color: white; /* White text */
+    width: 100%; /* Full width for the button */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.create-account-button:hover {
+    background-color: #5d45a0; /* Darker green on hover */
+}
+
+.error-message {
+    color: #d9534f; /* Red color for error messages */
+    margin-bottom: 15px; /* Space below the error message */
+    text-align: center; /* Center align error message */
+}
+
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif; /* Set a default font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #f5f5f5; /* Light background color */
+}
+
+/* Navigation Bar Styles */
+nav {
+    background-color: #664ac2; /* Blue background for the navbar */
+    padding: 10px; /* Padding around the navbar */
+    display: flex; /* Flexbox for horizontal layout */
+    justify-content: space-around; /* Space between links */
+}
+
+nav a {
+    color: white; /* White text for links */
+    text-decoration: none; /* Remove underline from links */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners for links */
+}
+
+nav a:hover {
+    background-color: #0062b3; /* Darker blue on hover */
+}
+
+/* Login Component Styles */
+.login-container {
+    max-width: 400px; /* Max width for the login form */
+    margin: 50px auto; /* Center the form */
+    padding: 20px; /* Padding around the form */
+    border: 1px solid #ccc; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    background-color: white; /* White background for the form */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.login-container h2 {
+    text-align: center; /* Center the heading */
+    color: #333; /* Dark text color */
+}
+
+.form-group {
+    margin-bottom: 15px; /* Space between form groups */
+}
+
+.error-message {
+    color: red; /* Red color for error messages */
+    margin-bottom: 10px; /* Space below error message */
+}
+
+/* Button Styles */
+.button {
+    padding: 10px 15px; /* Padding for buttons */
+    border: none; /* Remove default border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 16px; /* Font size */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+    width: 100%; /* Full width */
+}
+
+/* Login Button */
+.login-button {
+    background-color: #4CAF50; /* Green background for login button */
+    color: white; /* White text */
+}
+
+.login-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Home Component Styles */
+.home-container {
+    text-align: center; /* Center the content */
+    padding: 20px; /* Padding around the container */
+}
+
+.home-container h1 {
+    color: #333333; /* Dark text color */
+    margin-bottom: 20px; /* Space below the heading */
+}
+
+.home-content {
+    margin: 20px 0; /* Space around content */
+}
+
+/* Home Button */
+.home-button {
+    background-color: #aa00ff; /* Blue background for home button */
+    color: white; /* White text */
+}
+
+.home-button:hover {
+    background-color: #aa00b3; /* Darker blue on hover */
 }
