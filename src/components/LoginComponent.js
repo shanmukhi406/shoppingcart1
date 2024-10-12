@@ -5,6 +5,7 @@ const LoginComponent = () => {
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
     const [error, setError] = useState('');
+    const [showSuccessPopup, setShowSuccessPopup] = useState(false); // State for the popup
 
     const handleLogin = (e) => {
         e.preventDefault();
@@ -29,10 +30,17 @@ const LoginComponent = () => {
         // Here, you would typically send the credentials to your API
         console.log('Creating account with:', { email, password });
 
+        // Show success popup
+        setShowSuccessPopup(true); // Show the custom popup
+
         // Clear the fields after login attempt
         setEmail('');
         setPassword('');
         setConfirmPassword('');
+    };
+
+    const closeModal = () => {
+        setShowSuccessPopup(false); // Close the custom popup
     };
 
     return (
@@ -73,6 +81,14 @@ const LoginComponent = () => {
                 </div>
                 <button type="submit" className="create-account-button">Create Account</button>
             </form>
+            {showSuccessPopup && (
+                <div className="success-popup">
+                    <div className="popup-content">
+                        <p>Account created successfully!</p>
+                        <button onClick={closeModal}>Close</button>
+                    </div>
+                </div>
+            )}
         </div>
     );
 };
