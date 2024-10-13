@@ -18,8 +18,7 @@ function App() {
         { id: 3, name: 'Shoes', price: 799, image: shoes }
     ]);
     const [cartCourses, setCartCourses] = useState([]);
-    const [searchCourse, setSearchCourse] = useState('');
-    const discount = 20; // Fixed discount percentage
+    const [searchCourse, setSearchCourse] = useState("");
 
     const loadScript = (src) => {
         return new Promise((resolve) => {
@@ -78,17 +77,12 @@ function App() {
     };
 
     const totalAmountCalculationFunction = () => {
+        // Calculate the total without any discount
         return cartCourses.reduce((total, item) => total + item.product.price * item.quantity, 0);
     };
 
-    const calculateDiscountedAmount = () => {
-        const total = totalAmountCalculationFunction();
-        const discountAmount = (total * discount) / 100; // 20% discount
-        return total - discountAmount;
-    };
-
     const handlePayment = () => {
-        const totalAmount = calculateDiscountedAmount();
+        const totalAmount = totalAmountCalculationFunction();
         if (totalAmount > 0) {
             createRazorpayOrder(totalAmount);
         } else {
